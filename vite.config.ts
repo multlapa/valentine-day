@@ -6,6 +6,7 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
     plugins: [svgr({ include: '**/*.svg' }), react(), viteTsconfigPaths()],
+    base: '/valentine-day/',
     resolve: {
         alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
     },
